@@ -1,0 +1,222 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Template Exemplo</title>
+<meta http-equiv="Content-Type" content="text/html;" charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+html, body {
+	height: 100%;
+}
+
+body {
+	font-family: sans-serif;
+	flex-direction: column;
+	color: #525252;
+	font-size: 62.5%;
+	display: flex;
+	margin: 0;
+}
+/* NAVBAR EXEMPLO */
+.topnav {
+	background-color: #3147c7;
+}
+
+.topnav a {
+	float: left;
+	color: #f2f2f2;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 17px;
+}
+
+.topnav a:hover {
+	background-color: #ddd;
+	color: black;
+}
+
+.topnav a.active {
+	background-color: rgb(100, 200, 255);	
+	color: white;
+}
+/* FIM NAVBAR  */
+h1, h2, h3, h4, h5, h6 {
+	font-size: 1.8em;
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	font-size: 1.4em;
+	margin: 0;
+}
+
+a {
+	text-decoration: none;
+	font-size: 1.4em;
+}
+
+.standard-size {
+	max-width: 1316px;
+	margin: 0 auto;
+	width: 90%;
+}
+/* BANNER TOPO */
+.container-banner {
+	background:
+		url("https://spindigitalmedia.com/wp-content/uploads/2019/02/web-development.jpg")
+		center center no-repeat;
+	min-height: 500px;
+	height: 500px;
+}
+/* FIM BANNER TOPO */
+/* DIV QUE ENGLOBA TUDO */
+.container-master {
+	margin: 32px 0;
+}
+/* FIM DIV */
+/* CONTAINER QUE ENGLOBA O PRIMEIRO BLOCO */
+.container-icons {
+	justify-content: space-between;
+	margin: 32px auto;
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.container-icons-card {
+	justify-content: space-between;
+	flex-direction: column;
+	max-width: 340px;
+	align-items: center;
+	padding: 12px;
+	text-align: center;
+	display: flex;
+}
+
+.container-icons-card:nth-child(4), .container-icons-card:nth-child(5),
+	.container-icons-card:nth-child(6) {
+	margin-top: 32px;
+}
+
+.container-icons-card h5 {
+	margin: 12px 0;
+}
+/* FIM PRIMEIRO BLOCO  */
+.text-align-left {
+	text-align: left;
+}
+/* DIV DE IMAGEM 100% */
+.container-image {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.container-image img {
+	width: 25%;
+}
+/* FIM IMAGEM 100% */
+/* DIV COM 2 IMAGENS  */
+.container-image-double {
+	flex-wrap: wrap;
+	display: flex;
+}
+
+.container-image-double img {
+	width: 50%;
+}
+/* FIM DIV  */
+footer {
+	background-color: #333;
+	text-align: center;
+	padding: 12px;
+	color: #FFF;
+}
+
+@media ( max-width : 768px) {
+	.container-icons-card {
+		max-width: 300px;
+	}
+	.container-image img {
+		width: 50%;
+	}
+}
+
+@media ( max-width : 630px) {
+	.container-icons-card {
+		margin: 12px 0;
+		max-width: 100%;
+	}
+	.container-image img {
+		width: 100%;
+	}
+	.container-image-double img {
+		width: 100%;
+	}
+}
+</style>
+</head>
+
+<body>
+	<div class="topnav">
+		<div class="standard-size">
+
+            <a class="active" href="#" th:text="#{idioma}"></a> 
+			<a href="#" th:text="#{menu}"></a> <a href="#" th:text="#{cadastro}"></a>
+			<a href="#" th:text="#{contato}"></a> <a href="#"
+				th:text="#{empresa}"></a>
+		</div>
+	</div>
+
+	<div class="container-master">
+		<div class="container-icons standard-size">
+			<div class="container-icons-card">
+				<img width="60px"
+					src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/master/logo.png"
+					alt="">
+				<h5 th:text="#{icone}"></h5>
+				<p th:text="#{texto}"></p>
+			</div>
+			<div class="container-icons-card">
+				<img width="60px"
+					src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/master/logo.png"
+					alt="">
+				<h5 th:text="#{icone}"></h5>
+				<p th:text="#{texto}"></p>
+			</div>
+			<div class="container-icons-card">
+				<img width="60px"
+					src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/master/logo.png"
+					alt="">
+				<h5 th:text="#{icone}"></h5>
+				<p th:text="#{texto}"></p>
+			</div>
+			<div class="container-icons-card">
+				<img width="60px"
+					src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/master/logo.png"
+					alt="">
+				<h5 th:text="#{icone}"></h5>
+				<p th:text="#{texto}"></p>
+			</div>
+			<div class="container-icons-card">
+				<img width="60px"
+					src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/master/logo.png"
+					alt="">
+				<h5 th:text="#{icone}"></h5>
+				<p th:text="#{texto}"></p>
+			</div>
+			<div class="container-icons-card">
+				<img width="60px"
+					src="https://raw.githubusercontent.com/PKief/vscode-material-icon-theme/master/logo.png"
+					alt="">
+				<h5 th:text="#{icone}"></h5>
+				<p th:text="#{texto}"></p>
+			</div>
+		</div>
+
+
+	</div>
+	
+</body>
+
+</html>
